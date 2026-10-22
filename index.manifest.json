@@ -1,1 +1,49 @@
-{"background_color":"#080817","display":"standalone","icons":[{"sizes":"144x144","src":"index.144x144.png","type":"image/png"},{"sizes":"180x180","src":"index.180x180.png","type":"image/png"},{"sizes":"512x512","src":"index.512x512.png","type":"image/png"}],"name":"Fünfklang","orientation":"any","start_url":"./index.html"}
+{
+  "id": "./",
+  "name": "Fünfklang",
+  "short_name": "Fünfklang",
+  "description": "Ein Story-Abenteuer im HD-2D-Stil: Seit dreihundert Jahren schweigen die fünf Türme – und nur einer hört sie noch.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
+  "orientation": "any",
+  "background_color": "#080817",
+  "theme_color": "#080817",
+  "lang": "de",
+  "dir": "ltr",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "index.192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "index.512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "index.maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "index.maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
