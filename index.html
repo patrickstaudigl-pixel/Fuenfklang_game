@@ -115,6 +115,16 @@ if ('serviceWorker' in navigator) {
 		});
 	}).catch(() => {});
 }
+// Läuft das Spiel nicht als installierte App (z. B. über eine Verknüpfung oder im Browser am Handy), geht es beim ersten
+// Antippen in den Vollbildmodus, damit es sich trotzdem wie eine App anfühlt.
+const alsApp = () => matchMedia('(display-mode: fullscreen)').matches || matchMedia('(display-mode: standalone)').matches
+	|| navigator.standalone === true;
+document.addEventListener('pointerup', () => {
+	if (!alsApp() && !document.fullscreenElement && document.documentElement.requestFullscreen
+			&& matchMedia('(pointer: coarse)').matches) {
+		document.documentElement.requestFullscreen({ navigationUI: 'hide' }).catch(() => {});
+	}
+}, true);
 </script>
 </head>
 	<body>
